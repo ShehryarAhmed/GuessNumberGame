@@ -15,9 +15,10 @@ public class GenreateNumbers {
         while(genreateNum < 1 && genreateNum < 9 );
         return  genreateNum;
     }
+    int num = GenreateNumber();
     public boolean check(int getval){
-        int generat = GenreateNumber();
-        if(generat==getval){
+        if(num==getval){
+            num = GenreateNumber();
         return true;
         }
         else{
